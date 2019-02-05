@@ -115,7 +115,7 @@ node* createNode(int vertex){
 
 Graph* startGraph(int numVertices){
 	Graph* graph = (Graph*) malloc(sizeof(Graph)); //fetching memory
-	graph->adjList = malloc(sizeof(node) * numVertices * 4); //best to have a dynamic graph, hence the double pointer
+	graph->adjList = malloc(sizeof(node) * numVertices * 4); 
 	graph->vertices = numVertices;
 
 	for (int i = 0; i < numVertices; i++){
